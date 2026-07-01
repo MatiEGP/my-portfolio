@@ -1,10 +1,5 @@
 import type { TechItem } from "../types";
 
-/**
- * Stack tecnológico. El campo "icon" es el slug de https://simpleicons.org
- * (por ejemplo "react", "typescript", "nodedotjs", "postgresql").
- * Para agregar una tecnología, solo sumá un objeto nuevo al array.
- */
 export const techStack: TechItem[] = [
   { name: "React", icon: "react", level: 90 },
   { name: "TypeScript", icon: "typescript", level: 85 },

@@ -1,9 +1,5 @@
 import type { Project } from "../types";
 
-/**
- * Tus proyectos. Agregá o quitá objetos de este array para actualizar
- * las tarjetas que se muestran en la sección "Proyectos".
- */
 export const projects: Project[] = [
   {
     id: "proj-1",

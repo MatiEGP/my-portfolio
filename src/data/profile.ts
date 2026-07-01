@@ -1,9 +1,5 @@
 import type { Profile } from "../types";
 
-/**
- * Editá estos datos con tu información profesional.
- * Este es el único lugar que necesitás tocar para la sección "About Me".
- */
 export const profile: Profile = {
   name: "Matías Ezequiel Palomeque Galindo",
   role: "Desarrollador Full Stack",
