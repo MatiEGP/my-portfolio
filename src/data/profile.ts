@@ -4,7 +4,7 @@ export const profile: Profile = {
   name: "Matías Ezequiel Palomeque Galindo",
   role: "Desarrollador Full Stack",
   location: "Córdoba, Argentina",
-  bio: "Construyo productos web prolijos, de punta a punta. Me gusta el código legible, los commits chicos y los sistemas que no se caen a las 3am. Actualmente enfocado en React, TypeScript y arquitecturas escalables en Node.",
+  bio: "¡Hola! Soy un estudiante de 5to año de la carrera de Ingeniería en Sistemas de Información en la Universidad Tecnológica Nacional (UTN). Mi experiencia práctica abarca desde la creación de aplicaciones web interactivas con React, TypeScript y Node.js, hasta el diseño de arquitecturas backend en Java (Spring Boot) y Python. Me destaco por mi enfoque analítico para resolver problemas complejos y mi capacidad de adaptarme rápidamente a nuevas herramientas y metodologías ágiles. y desarrollador enfocado en el Backend y el ecosistema FullStack",
   avatarUrl: "/src/assets/104948945.png",
   status: "Disponible para mi primera experiencia laboral",
   socials: [

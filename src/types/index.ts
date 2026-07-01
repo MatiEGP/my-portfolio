@@ -20,6 +20,8 @@ export interface TechItem {
   icon: string;
   /** 0-100, nivel de dominio propio (opcional, se usa para el borde de progreso) */
   level?: number;
+  /** color hexadecimal opcional para el icono (por defecto se usa el color oficial de simpleicons) */
+  color?: string;
 }
 
 export interface Project {

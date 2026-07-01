@@ -3,18 +3,18 @@ import type { Project } from "../types";
 export const projects: Project[] = [
   {
     id: "proj-1",
-    title: "Nombre del Proyecto",
+    title: "Travel Planner",
     description:
-      "Descripción corta de qué hace el proyecto, qué problema resuelve y qué lo hace interesante.",
+      "Plataforma web para planificar viajes, simplifica la logística y la organización de itinerarios. Permite a los usuarios crear y organizar sus viajes. Trabajo Integrador de la materia Desarrollo de Software",
     image:
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop",
-    tags: ["React", "TypeScript", "Node.js"],
-    repoUrl: "https://github.com/tu-usuario/proyecto-1",
-    demoUrl: "https://tu-demo.com",
-    status: "active",
-    commitMessage: "feat: initial release",
+    tags: ["React", "TypeScript", "Vite", "Java", "Spring Boot", "PostgreSQL", "Docker"],
+    repoUrl: "https://github.com/MatiEGP/travel-planner",
+    //demoUrl: "https://tu-demo.com", // Todavía no tiene
+    status: "wip", // Puede ser "active", "archived" o "wip"
+    commitMessage: "initial commit",
   },
-  {
+  /*{
     id: "proj-2",
     title: "Otro Proyecto",
     description:
@@ -23,7 +23,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
     tags: ["Next.js", "PostgreSQL", "Docker"],
     repoUrl: "https://github.com/tu-usuario/proyecto-2",
-    status: "wip",
+    status: "wip", // Puede ser "active", "archived" o "wip"
     commitMessage: "wip: building core features",
   },
   {
@@ -36,7 +36,8 @@ export const projects: Project[] = [
     tags: ["Python", "API"],
     repoUrl: "https://github.com/tu-usuario/proyecto-3",
     demoUrl: "https://tu-demo-3.com",
-    status: "archived",
+    status: "archived", // Puede ser "active", "archived" o "wip"
     commitMessage: "chore: archive project",
   },
+  */
 ];
