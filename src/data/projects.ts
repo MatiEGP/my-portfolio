@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: "proj-1",
     title: "Travel Planner",
     description:
-      "Plataforma web para planificar viajes, simplifica la logística y la organización de itinerarios. Permite a los usuarios crear y organizar sus viajes. Trabajo Integrador de la materia Desarrollo de Software",
+      "Plataforma web para planificar viajes, simplifica la logística y la organización de itinerarios. Permite a los usuarios crear y organizar sus viajes. Trabajo Integrador de la materia Desarrollo de Software, originalmente hecho con stack SERN (SQLite, Express, React, Node.js) ahora migrado a Java con Spring Boot y PostgreSQL.",
     image:
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop",
     tags: ["React", "TypeScript", "Vite", "Java", "Spring Boot", "PostgreSQL", "Docker"],
