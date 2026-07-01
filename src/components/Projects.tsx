@@ -17,7 +17,7 @@ export default function Projects() {
         <p className="eyebrow">projects/</p>
         <h2 className="section-title">Proyectos</h2>
         <p className="section-subtitle">
-          Una selección de trabajos personales y profesionales. Cada tarjeta es un commit: código,
+          Una selección de trabajos personales y proyectos de la facultad. Cada tarjeta es un commit: código,
           demo y contexto.
         </p>
 

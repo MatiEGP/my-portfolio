@@ -45,11 +45,36 @@
   opacity: 1;
 }
 
+.stack__icon-wrap {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
 .stack__icon {
   width: 30px;
   height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.stack__icon--base {
   opacity: 0.85;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.stack__icon--color {
+  opacity: 0;
+}
+
+.stack__item:hover .stack__icon--base {
+  opacity: 0;
+}
+
+.stack__item:hover .stack__icon--color {
+  opacity: 1;
+  transform: scale(1.08);
 }
 
 .stack__item:hover .stack__icon {

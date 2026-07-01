@@ -44,13 +44,22 @@ export default function TechStack() {
                 } as React.CSSProperties
               }
             >
-              <img
-                src={`https://cdn.simpleicons.org/${tech.icon}/d7dce2`}
-                alt=""
-                aria-hidden="true"
-                loading="lazy"
-                className="stack__icon"
-              />
+              <span className="stack__icon-wrap">
+                <img
+                  src={`https://cdn.simpleicons.org/${tech.icon}/d7dce2`}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  className="stack__icon stack__icon--base"
+                />
+                <img 
+                  src={`https://cdn.simpleicons.org/${tech.icon}`}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  className="stack__icon stack__icon--color"
+                />
+              </span>
               <span className="stack__name mono">{tech.name}</span>
             </motion.li>
           ))}

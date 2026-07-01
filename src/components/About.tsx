@@ -30,7 +30,7 @@ export default function About() {
 
           <div className="about__meta">
             <span className="about__status">
-              <span className="about__status-dot" />
+              <span className="about__status-dot" /> {/** Aquí cambio el color del dot (dot--red, dot--yellow, dot--green) */}
               {profile.status}
             </span>
             <span className="about__location mono">{profile.location}</span>
