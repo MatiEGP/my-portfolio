@@ -12,7 +12,7 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/MatiEGP/travel-planner",
     //demoUrl: "https://tu-demo.com", // Todavía no tiene
     status: "wip", // Puede ser "active", "archived" o "wip"
-    commitMessage: "initial commit",
+    commitMessage: "chore(release): bump version to v1.0.0",
   },
   /*{
     id: "proj-2",
