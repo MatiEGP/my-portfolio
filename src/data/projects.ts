@@ -5,7 +5,7 @@ export const projects: Project[] = [
     id: "proj-1",
     title: "Travel Planner",
     description:
-      "Plataforma web para planificar viajes, simplifica la logística y la organización de itinerarios. Permite a los usuarios crear y organizar sus viajes. Trabajo Integrador de la materia Desarrollo de Software, originalmente hecho con stack SERN (SQLite, Express, React, Node.js) ahora migrado a Java con Spring Boot y PostgreSQL.",
+      "Plataforma web para planificar viajes, simplifica la logística y la organización de itinerarios. Permite a los usuarios crear y organizar sus viajes. Trabajo Integrador de la materia Desarrollo de Software, migrado a Java con Spring Boot, React + Typescript y PostgreSQL.",
     image:
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop",
     tags: ["React", "TypeScript", "Vite", "Java", "Spring Boot", "PostgreSQL", "Docker"],
@@ -14,19 +14,19 @@ export const projects: Project[] = [
     status: "wip", // Puede ser "active", "archived" o "wip"
     commitMessage: "chore(release): bump version to v1.0.0",
   },
-  /*{
+  {
     id: "proj-2",
-    title: "Otro Proyecto",
+    title: "Travel Planner (Old)",
     description:
-      "Otra descripción corta y directa. Contá el stack, el desafío técnico principal y el resultado.",
+      "Plataforma web para planificar viajes, versión original hecha con stack SERN (SQLite, Express, React, Node.js). Trabajo Integrador de la materia Desarrollo de Software.",
     image:
       "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
-    tags: ["Next.js", "PostgreSQL", "Docker"],
-    repoUrl: "https://github.com/tu-usuario/proyecto-2",
-    status: "wip", // Puede ser "active", "archived" o "wip"
-    commitMessage: "wip: building core features",
+    tags: ["SQLite", "Express", "Node.js", "Javascript", "React"],
+    repoUrl: "https://github.com/MatiEGP/travel-planner-old",
+    status: "archived", // Puede ser "active", "archived" o "wip"
+    commitMessage: "chore: initial commit",
   },
-  {
+  /*{
     id: "proj-3",
     title: "Proyecto Personal",
     description:
