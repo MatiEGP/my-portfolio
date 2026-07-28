@@ -28,12 +28,6 @@ I am an advanced **Systems Engineering student** (5th year at UTN FRC) and a pas
 | **DevOps & Tools** | Docker, GitHub Actions, Git/GitHub, Linux, Bizagi (BPMN) |
 | **Hardware / IoT** | Arduino, Digital Logic, Microcontrollers |
 
-### 📈 About this Project
-This portfolio was built from scratch to put my frontend skills into practice:
-* **Tech Stack:** React + TypeScript + CSS3.
-* **Architecture:** Component-based UI, fully responsive design, and optimized performance.
-* **Deployment:** Hosted with modern cloud platforms.
-
 ### 📩 Contact & Links
 * **LinkedIn:** [Matias Ezequiel Palomeque Galindo](https://linkedin.com/in/matias-ezequiel-palomeque-galindo-0a775b2a9/)
 * **GitHub:** [MatiEGP](https://github.com/MatiEGP)
@@ -62,12 +56,6 @@ Soy un estudiante avanzado de **Ingeniería en Sistemas de Información** (5.° 
 | **Bases de Datos & QA** | SQL, SQLite, PostgreSQL, MySQL, Postman |
 | **DevOps & Herramientas** | Docker, GitHub Actions, Git/GitHub, Linux, Bizagi (BPMN) |
 | **Hardware / IoT** | Arduino, Lógica Digital, Microcontroladores |
-
-### 📈 Sobre este Proyecto
-Este portafolio fue construido desde cero para poner en práctica mis habilidades frontend:
-* **Stack Tecnológico:** React + TypeScript + CSS3.
-* **Arquitectura:** Interfaz basada en componentes, diseño 100% responsivo y rendimiento optimizado.
-* **Despliegue:** Alojado en plataformas en la nube de última generación.
 
 ### 📩 Contacto y Enlaces
 * **LinkedIn:** [Matias Ezequiel Palomeque Galindo](https://linkedin.com/in/matias-ezequiel-palomeque-galindo-0a775b2a9/)
