@@ -9,11 +9,11 @@ export function Contact() {
   return (
     <section className="w-full max-w-4xl mx-auto min-h-[100dvh] md:min-h-screen flex flex-col justify-center py-12 px-4 text-center md:snap-start md:snap-always">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        initial={{ opacity: 0, y: 50, scale: 0.85, filter: "blur(10px)" }}
+        whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+        viewport={{ once: false, amount: 0.2 }}
         whileHover={{ y: -5 }}
-        transition={{ duration: 0.5 }}
+        transition={{ type: "spring", bounce: 0.4, duration: 0.8  }}
         className="relative group overflow-hidden rounded-3xl p-[1px] shadow-sm hover:shadow-primary/5 w-full"
       >
         {/* Gradiente giratorio de fondo */}

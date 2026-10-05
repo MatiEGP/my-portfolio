@@ -42,11 +42,11 @@ export function TechStack() {
         {CATEGORIES.map((category, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 50, scale: 0.85, filter: "blur(10px)" }}
+            whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+            viewport={{ once: false, amount: 0.2 }}
             whileHover={{ scale: 1.02, y: -5 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            transition={{ type: "spring", bounce: 0.4, duration: 0.8, delay: index * 0.1  }}
             className="relative group overflow-hidden rounded-3xl p-[1px] shadow-sm hover:shadow-primary/5"
           >
             {/* Gradiente giratorio de fondo */}

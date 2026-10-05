@@ -10,10 +10,11 @@ export function Hero() {
         
         {/* Main Text Card (2 cols) */}
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 50, scale: 0.85, filter: "blur(10px)" }}
+          whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+          viewport={{ once: false, amount: 0.2 }}
           whileHover={{ y: -5 }}
-          transition={{ duration: 0.5 }}
+          transition={{ type: "spring", bounce: 0.4, duration: 0.8  }}
           className="relative group md:col-span-2 overflow-hidden rounded-3xl p-[1px] shadow-sm hover:shadow-primary/5"
         >
           {/* Gradiente giratorio de fondo */}
@@ -47,10 +48,11 @@ export function Hero() {
 
         {/* Avatar / Photo Card (1 col) */}
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 50, scale: 0.85, filter: "blur(10px)" }}
+          whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+          viewport={{ once: false, amount: 0.2 }}
           whileHover={{ y: -5 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{ type: "spring", bounce: 0.4, duration: 0.8, delay: 0.1  }}
           className="relative group overflow-hidden rounded-3xl p-[1px] shadow-sm hover:shadow-primary/5 min-h-[300px]"
         >
           {/* Gradiente giratorio de fondo */}
@@ -72,10 +74,11 @@ export function Hero() {
 
         {/* Status / Quick Info Card */}
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 50, scale: 0.85, filter: "blur(10px)" }}
+          whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+          viewport={{ once: false, amount: 0.2 }}
           whileHover={{ scale: 1.01 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ type: "spring", bounce: 0.4, duration: 0.8, delay: 0.2  }}
           className="relative group md:col-span-3 overflow-hidden rounded-3xl p-[1px]"
         >
           {/* Gradiente giratorio de fondo */}
