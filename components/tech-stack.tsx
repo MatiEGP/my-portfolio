@@ -89,15 +89,15 @@ export function TechStack() {
                   {category.title}
                 </h3>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-4">
                 {category.techs.map((tech) => (
-                  <span
+                  <div
                     key={tech.name}
-                    className="flex items-center gap-2 px-3 py-1.5 bg-secondary/50 hover:bg-secondary text-secondary-foreground text-sm font-medium rounded-full transition-colors cursor-default"
+                    className="flex flex-col items-center justify-center gap-2 p-3 min-w-[80px] bg-secondary/50 hover:bg-secondary text-secondary-foreground rounded-xl transition-colors cursor-default group/tech"
                   >
-                    <span className="text-primary">{tech.icon}</span>
-                    {tech.name}
-                  </span>
+                    <span className="text-3xl text-primary transition-transform group-hover/tech:scale-110">{tech.icon}</span>
+                    <span className="text-xs font-medium text-center">{tech.name}</span>
+                  </div>
                 ))}
               </div>
             </div>
