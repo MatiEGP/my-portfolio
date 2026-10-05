@@ -1,20 +1,25 @@
 "use client";
-import { useCallback } from "react";
-import Particles from "@tsparticles/react";
+import { useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import type { Engine } from "@tsparticles/engine";
 
 export const ParticlesBackground = () => {
-  const particlesInit = useCallback(async (engine: Engine) => {
-    // Cargamos solo la versión slim. Cuidando el bundle size como campeones.
-    await loadSlim(engine);
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      // Cargamos solo la versión slim. Cuidando el bundle size como campeones.
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
   }, []);
+
+  if (!init) return <></>;
 
   return (
     <Particles
       id="tsparticles"
-      init={particlesInit}
-      className="absolute inset-0 -z-10" // Fundamental para que quede de fondo
       options={{
         fullScreen: { enable: true, zIndex: -1 },
         background: { color: { value: "transparent" } },
