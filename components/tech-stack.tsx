@@ -28,7 +28,7 @@ const CATEGORIES = [
 
 export function TechStack() {
   return (
-    <section className="w-full max-w-5xl mx-auto py-12 md:py-20 px-4">
+    <section className="w-full max-w-5xl mx-auto min-h-[100dvh] md:min-h-screen flex flex-col justify-center py-12 px-4 md:snap-start md:snap-always">
       <div className="mb-12">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-4">
           Stack Técnico
@@ -45,8 +45,9 @@ export function TechStack() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            whileHover={{ scale: 1.02, y: -5 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-card border border-border/50 rounded-3xl p-8 hover:border-primary/30 transition-colors"
+            className="bg-card border border-border/50 rounded-3xl p-8 hover:border-primary/50 transition-colors shadow-sm hover:shadow-primary/5"
           >
             {category.icon}
             <h3 className="text-xl font-bold text-foreground mb-6">

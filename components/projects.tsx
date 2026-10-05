@@ -22,7 +22,7 @@ const PROJECTS = [
 
 export function Projects() {
   return (
-    <section className="w-full max-w-5xl mx-auto py-12 md:py-20 px-4">
+    <section className="w-full max-w-5xl mx-auto min-h-[100dvh] md:min-h-screen flex flex-col justify-center py-12 px-4 md:snap-start md:snap-always">
       <div className="mb-12">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-4">
           Proyectos Destacados
@@ -40,8 +40,9 @@ export function Projects() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            whileHover={{ y: -5 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="group flex flex-col lg:flex-row gap-8 items-center"
+            className="group flex flex-col lg:flex-row gap-8 items-center bg-card p-6 md:p-8 rounded-3xl border border-border/50 hover:border-primary/50 transition-colors shadow-sm hover:shadow-primary/5"
           >
             {/* Project Image Placeholder */}
             <div className="w-full lg:w-1/2 aspect-video bg-card border border-border/50 rounded-2xl overflow-hidden relative flex items-center justify-center transition-all duration-300 group-hover:border-primary/50">
