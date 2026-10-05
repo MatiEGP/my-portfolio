@@ -10,3 +10,5 @@ Replace explosion background with a breakable node network. Nodes connect with l
 - [x] Implement breakable network physics (Fruit Ninja style slicing).
 - [x] Implement falling debris (broken lines and nodes).
 - [x] Ensure continuous respawn of nodes.
+- [x] Refactor breaking mechanic to click-only instead of hover.
+- [x] Add elaborate spark explosion animation using card glow colors (#E2CBFF, #393BB2).
