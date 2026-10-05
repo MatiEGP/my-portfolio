@@ -2,27 +2,56 @@
 
 import { motion } from "framer-motion";
 import { Server, Layout, Database, Wrench } from "lucide-react";
+import { FaJava, FaAws } from "react-icons/fa";
+import { 
+  SiSpringboot, SiNodedotjs, SiTypescript, SiJavascript, SiPython, 
+  SiNextdotjs, SiReact, SiVite, SiDocker, SiLinux, 
+  SiVercel, SiRailway, SiPostgresql, SiMysql, SiGit, SiGithubactions, SiMiro 
+} from "react-icons/si";
 
 const CATEGORIES = [
   {
     title: "Backend",
-    icon: <Server className="w-6 h-6 mb-4 text-primary" />,
-    techs: ["Java + Spring Boot", "Node.js", "TypeScript", "JavaScript", "Python"],
+    icon: <Server className="w-6 h-6 text-primary" />,
+    techs: [
+      { name: "Java", icon: <FaJava /> },
+      { name: "Spring Boot", icon: <SiSpringboot /> },
+      { name: "Node.js", icon: <SiNodedotjs /> },
+      { name: "TypeScript", icon: <SiTypescript /> },
+      { name: "JavaScript", icon: <SiJavascript /> },
+      { name: "Python", icon: <SiPython /> },
+    ],
   },
   {
     title: "Frontend",
-    icon: <Layout className="w-6 h-6 mb-4 text-primary" />,
-    techs: ["Next.js", "React", "Vite"],
+    icon: <Layout className="w-6 h-6 text-primary" />,
+    techs: [
+      { name: "Next.js", icon: <SiNextdotjs /> },
+      { name: "React", icon: <SiReact /> },
+      { name: "Vite", icon: <SiVite /> },
+    ],
   },
   {
     title: "Infra & DBs",
-    icon: <Database className="w-6 h-6 mb-4 text-primary" />,
-    techs: ["Docker", "Linux", "AWS", "Vercel", "Railway", "PostgreSQL", "MySQL"],
+    icon: <Database className="w-6 h-6 text-primary" />,
+    techs: [
+      { name: "Docker", icon: <SiDocker /> },
+      { name: "Linux", icon: <SiLinux /> },
+      { name: "AWS", icon: <FaAws /> },
+      { name: "Vercel", icon: <SiVercel /> },
+      { name: "Railway", icon: <SiRailway /> },
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
+      { name: "MySQL", icon: <SiMysql /> },
+    ],
   },
   {
     title: "Tools & OS",
-    icon: <Wrench className="w-6 h-6 mb-4 text-primary" />,
-    techs: ["Git", "GitHub Actions", "Linux", "Miro"],
+    icon: <Wrench className="w-6 h-6 text-primary" />,
+    techs: [
+      { name: "Git", icon: <SiGit /> },
+      { name: "GitHub Actions", icon: <SiGithubactions /> },
+      { name: "Miro", icon: <SiMiro /> },
+    ],
   },
 ];
 
@@ -31,10 +60,10 @@ export function TechStack() {
     <section className="w-full max-w-5xl mx-auto min-h-[100dvh] md:min-h-screen flex flex-col justify-center py-12 px-4 md:snap-start md:snap-always">
       <div className="mb-12">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-4">
-          Stack Técnico
+          Stack Tcnico
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl">
-          Las tecnologías y herramientas con las que trabajo para construir software de principio a fin, desde la infraestructura hasta la interfaz.
+          Las tecnologas y herramientas con las que trabajo para construir software de principio a fin, desde la infraestructura hasta la interfaz.
         </p>
       </div>
 
@@ -54,17 +83,20 @@ export function TechStack() {
             
             {/* Contenido de la tarjeta */}
             <div className="relative z-10 bg-card h-full w-full p-8 rounded-[calc(1.5rem-1px)] border border-border/50 group-hover:border-transparent transition-colors">
-              {category.icon}
-              <h3 className="text-xl font-bold text-foreground mb-6">
-                {category.title}
-              </h3>
+              <div className="flex items-center gap-3 mb-6">
+                {category.icon}
+                <h3 className="text-xl font-bold text-foreground">
+                  {category.title}
+                </h3>
+              </div>
               <div className="flex flex-wrap gap-2">
                 {category.techs.map((tech) => (
                   <span
-                    key={tech}
-                    className="px-3 py-1.5 bg-secondary text-secondary-foreground text-sm font-medium rounded-full"
+                    key={tech.name}
+                    className="flex items-center gap-2 px-3 py-1.5 bg-secondary/50 hover:bg-secondary text-secondary-foreground text-sm font-medium rounded-full transition-colors cursor-default"
                   >
-                    {tech}
+                    <span className="text-primary">{tech.icon}</span>
+                    {tech.name}
                   </span>
                 ))}
               </div>
