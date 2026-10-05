@@ -36,10 +36,10 @@ export function Hero() {
               experiencias web modernas.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="rounded-full font-semibold">
+              <Button size="lg" className="rounded-full font-semibold" render={<a href="#contact" />} nativeButton={false}>
                 Contactame
               </Button>
-              <Button size="lg" variant="secondary" className="rounded-full font-semibold">
+              <Button size="lg" variant="secondary" className="rounded-full font-semibold" render={<a href="#projects" />} nativeButton={false}>
                 Ver Proyectos
               </Button>
             </div>

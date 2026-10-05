@@ -3,7 +3,35 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { Mail } from "lucide-react";
+import { Mail, Copy, Check } from "lucide-react";
+import { useState } from "react";
+
+
+function CopyEmail() {
+  const [copied, setCopied] = useState(false);
+  const email = "matias.palomeque@ejemplo.com"; // TODO: Cambiar por tu email real
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <div className="flex items-center gap-2 bg-background hover:bg-secondary/50 border border-border/50 p-1 pl-4 rounded-full transition-colors h-11">
+      <span className="text-sm font-medium text-foreground select-all">{email}</span>
+      <Button 
+        size="icon" 
+        variant="ghost" 
+        className="rounded-full w-9 h-9 shrink-0 hover:bg-background" 
+        onClick={handleCopy}
+        title="Copiar email"
+      >
+        {copied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4 text-muted-foreground" />}
+      </Button>
+    </div>
+  );
+}
 
 export function Contact() {
   return (
@@ -33,10 +61,13 @@ export function Contact() {
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 z-10">
-            <Button nativeButton={false} size="lg" className="rounded-full gap-2 font-semibold" render={<a href="mailto:tu-email@ejemplo.com" />}>
-              <Mail className="w-5 h-5" />
-              Enviar Email
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto items-center justify-center">
+              <Button nativeButton={false} size="lg" className="rounded-full gap-2 font-semibold h-11 px-6" render={<a href="mailto:matias.palomeque@ejemplo.com" />}>
+                <Mail className="w-5 h-5" />
+                Enviar Email
+              </Button>
+              <CopyEmail />
+            </div>
             
             <Button nativeButton={false} size="lg" variant="outline" className="rounded-full gap-2 font-semibold bg-background hover:bg-secondary transition-colors" render={<a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" />}>
               <FaLinkedin className="w-5 h-5" />
