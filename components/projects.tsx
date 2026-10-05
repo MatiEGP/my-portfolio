@@ -42,41 +42,47 @@ export function Projects() {
             viewport={{ once: true }}
             whileHover={{ y: -5 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="group flex flex-col lg:flex-row gap-8 items-center bg-card p-6 md:p-8 rounded-3xl border border-border/50 hover:border-primary/50 transition-colors shadow-sm hover:shadow-primary/5"
+            className="relative group overflow-hidden rounded-3xl p-[1px] shadow-sm hover:shadow-primary/5"
           >
-            {/* Project Image Placeholder */}
-            <div className="w-full lg:w-1/2 aspect-video bg-card border border-border/50 rounded-2xl overflow-hidden relative flex items-center justify-center transition-all duration-300 group-hover:border-primary/50">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
-              <p className="text-muted-foreground font-medium z-10">Mockup Proyecto {index + 1}</p>
-            </div>
-
-            {/* Project Info */}
-            <div className="w-full lg:w-1/2 flex flex-col justify-center">
-              <h3 className="text-2xl font-bold text-foreground mb-3">
-                {project.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">
-                {project.description}
-              </p>
-              
-              <div className="flex flex-wrap gap-2 mb-8">
-                {project.stack.map((tech) => (
-                  <span 
-                    key={tech} 
-                    className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full"
-                  >
-                    {tech}
-                  </span>
-                ))}
+            {/* Gradiente giratorio de fondo */}
+            <span className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            
+            {/* Contenido de la tarjeta */}
+            <div className="relative z-10 flex flex-col lg:flex-row gap-8 items-center bg-card p-6 md:p-8 h-full w-full rounded-[calc(1.5rem-1px)] border border-border/50 group-hover:border-transparent transition-colors">
+              {/* Project Image Placeholder */}
+              <div className="w-full lg:w-1/2 aspect-video bg-card border border-border/50 rounded-2xl overflow-hidden relative flex items-center justify-center transition-all duration-300 group-hover:border-primary/50">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
+                <p className="text-muted-foreground font-medium z-10">Mockup Proyecto {index + 1}</p>
               </div>
 
-              <div className="flex gap-4">
-                <Button variant="default" className="rounded-full font-semibold">
-                  Ver Código
-                </Button>
-                <Button variant="outline" className="rounded-full font-semibold">
-                  Ver Demo
-                </Button>
+              {/* Project Info */}
+              <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  {project.title}
+                </h3>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {project.stack.map((tech) => (
+                    <span 
+                      key={tech} 
+                      className="px-3 py-1 bg-secondary text-secondary-foreground text-sm font-medium rounded-full"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex gap-4">
+                  <Button variant="default" className="rounded-full font-semibold">
+                    Ver Código
+                  </Button>
+                  <Button variant="outline" className="rounded-full font-semibold">
+                    Ver Demo
+                  </Button>
+                </div>
               </div>
             </div>
           </motion.div>
