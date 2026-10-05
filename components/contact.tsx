@@ -35,7 +35,7 @@ function CopyEmail() {
 
 export function Contact() {
   return (
-    <section className="w-full max-w-4xl mx-auto min-h-[100dvh] md:min-h-screen flex flex-col justify-center py-12 px-4 text-center md:snap-start md:snap-always">
+    <section id="contact" className="w-full max-w-4xl mx-auto min-h-[100dvh] md:min-h-screen flex flex-col justify-center py-12 px-4 text-center md:snap-start md:snap-always">
       <motion.div
         initial={{ opacity: 0, y: 50, scale: 0.85, filter: "blur(10px)" }}
         whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}

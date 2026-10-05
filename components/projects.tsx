@@ -22,7 +22,7 @@ const PROJECTS = [
 
 export function Projects() {
   return (
-    <section className="w-full max-w-5xl mx-auto min-h-[100dvh] md:min-h-screen flex flex-col justify-center py-12 px-4 md:snap-start md:snap-always">
+    <section id="projects" className="w-full max-w-5xl mx-auto min-h-[100dvh] md:min-h-screen flex flex-col justify-center py-12 px-4 md:snap-start md:snap-always">
       <div className="mb-12">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-4">
           Proyectos Destacados
