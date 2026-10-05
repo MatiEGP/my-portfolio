@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
-import { ParticlesBackground } from "@/components/particles-background";
+import { InteractiveBackground } from "@/components/interactive-background";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${jakarta.variable} ${jetbrains.variable} h-full antialiased dark`}
     >
       <body className="min-h-full flex flex-col">
-        <ParticlesBackground />
+        <InteractiveBackground />
         {children}
       </body>
     </html>
