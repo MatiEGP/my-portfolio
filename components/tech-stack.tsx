@@ -14,12 +14,12 @@ const CATEGORIES = [
     title: "Backend",
     icon: <Server className="w-6 h-6 text-primary" />,
     techs: [
-      { name: "Java", icon: <FaJava /> },
-      { name: "Spring Boot", icon: <SiSpringboot /> },
-      { name: "Node.js", icon: <SiNodedotjs /> },
-      { name: "TypeScript", icon: <SiTypescript /> },
-      { name: "JavaScript", icon: <SiJavascript /> },
-      { name: "Python", icon: <SiPython /> },
+      { name: "Java", icon: <FaJava />, color: "#ED8B00" },
+      { name: "Spring Boot", icon: <SiSpringboot />, color: "#6DB33F" },
+      { name: "Node.js", icon: <SiNodedotjs />, color: "#339933" },
+      { name: "TypeScript", icon: <SiTypescript />, color: "#3178C6" },
+      { name: "JavaScript", icon: <SiJavascript />, color: "#F7DF1E" },
+      { name: "Python", icon: <SiPython />, color: "#3776AB" },
     ],
   },
   {
@@ -27,29 +27,29 @@ const CATEGORIES = [
     icon: <Layout className="w-6 h-6 text-primary" />,
     techs: [
       { name: "Next.js", icon: <SiNextdotjs /> },
-      { name: "React", icon: <SiReact /> },
-      { name: "Vite", icon: <SiVite /> },
+      { name: "React", icon: <SiReact />, color: "#61DAFB" },
+      { name: "Vite", icon: <SiVite />, color: "#646CFF" },
     ],
   },
   {
     title: "Infra & DBs",
     icon: <Database className="w-6 h-6 text-primary" />,
     techs: [
-      { name: "Docker", icon: <SiDocker /> },
-      { name: "Linux", icon: <SiLinux /> },
-      { name: "AWS", icon: <FaAws /> },
+      { name: "Docker", icon: <SiDocker />, color: "#2496ED" },
+      { name: "Linux", icon: <SiLinux />, color: "#FCC624" },
+      { name: "AWS", icon: <FaAws />, color: "#FF9900" },
       { name: "Vercel", icon: <SiVercel /> },
       { name: "Railway", icon: <SiRailway /> },
-      { name: "PostgreSQL", icon: <SiPostgresql /> },
-      { name: "MySQL", icon: <SiMysql /> },
+      { name: "PostgreSQL", icon: <SiPostgresql />, color: "#4169E1" },
+      { name: "MySQL", icon: <SiMysql />, color: "#4479A1" },
     ],
   },
   {
     title: "Tools & OS",
     icon: <Wrench className="w-6 h-6 text-primary" />,
     techs: [
-      { name: "Git", icon: <SiGit /> },
-      { name: "GitHub Actions", icon: <SiGithubactions /> },
+      { name: "Git", icon: <SiGit />, color: "#F05032" },
+      { name: "GitHub Actions", icon: <SiGithubactions />, color: "#2088FF" },
       { name: "Miro", icon: <SiMiro /> },
     ],
   },
@@ -95,7 +95,12 @@ export function TechStack() {
                     key={tech.name}
                     className="flex flex-col items-center justify-center gap-2 p-3 min-w-[80px] bg-secondary/50 hover:bg-secondary text-secondary-foreground rounded-xl transition-colors cursor-default group/tech"
                   >
-                    <span className="text-3xl text-primary transition-transform group-hover/tech:scale-110">{tech.icon}</span>
+                    <span 
+                      className="text-3xl transition-transform group-hover/tech:scale-110 drop-shadow-md"
+                      style={tech.color ? { color: tech.color } : {}}
+                    >
+                      {tech.icon}
+                    </span>
                     <span className="text-xs font-medium text-center">{tech.name}</span>
                   </div>
                 ))}
