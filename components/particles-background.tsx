@@ -13,9 +13,9 @@ export const ParticlesBackground = () => {
     <Particles
       id="tsparticles"
       init={particlesInit}
-      className="absolute inset-0 -z-10"
+      className="fixed inset-0"
       options={{
-        fullScreen: { enable: true, zIndex: -1 },
+        fullScreen: { enable: true, zIndex: 0 },
         background: { color: { value: "transparent" } },
         particles: {
           number: { value: 40, density: { enable: true, width: 800 } },

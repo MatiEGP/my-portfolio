@@ -36,7 +36,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body className="min-h-full flex flex-col">
         <ParticlesBackground />
-        {children}
+        <main className="relative z-10 flex-1 flex flex-col">
+          {children}
+        </main>
       </body>
     </html>
   );
