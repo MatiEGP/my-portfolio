@@ -33,25 +33,19 @@ export function Contact() {
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 z-10">
-            <Button size="lg" className="rounded-full gap-2 font-semibold" asChild>
-              <a href="mailto:tu-email@ejemplo.com">
-                <Mail className="w-5 h-5" />
-                Enviar Email
-              </a>
+            <Button size="lg" className="rounded-full gap-2 font-semibold" render={<a href="mailto:tu-email@ejemplo.com" />}>
+              <Mail className="w-5 h-5" />
+              Enviar Email
             </Button>
             
-            <Button size="lg" variant="outline" className="rounded-full gap-2 font-semibold bg-background hover:bg-secondary transition-colors" asChild>
-              <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="w-5 h-5" />
-                LinkedIn
-              </a>
+            <Button size="lg" variant="outline" className="rounded-full gap-2 font-semibold bg-background hover:bg-secondary transition-colors" render={<a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" />}>
+              <FaLinkedin className="w-5 h-5" />
+              LinkedIn
             </Button>
 
-            <Button size="lg" variant="outline" className="rounded-full gap-2 font-semibold bg-background hover:bg-secondary transition-colors" asChild>
-              <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">
-                <FaGithub className="w-5 h-5" />
-                GitHub
-              </a>
+            <Button size="lg" variant="outline" className="rounded-full gap-2 font-semibold bg-background hover:bg-secondary transition-colors" render={<a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" />}>
+              <FaGithub className="w-5 h-5" />
+              GitHub
             </Button>
           </div>
         </div>
