@@ -5,16 +5,16 @@ import { Button } from "@/components/ui/button";
 
 const PROJECTS = [
   {
-    title: "Proyecto 1: Sistema de Gestión",
-    description: "Breve descripción del problema que resolviste y cómo. Por ejemplo: API RESTful desarrollada con Java y Spring Boot, conectada a un frontend de React. Dockerizado para despliegues fáciles.",
-    stack: ["Next.js", "Java", "Docker", "PostgreSQL"],
-    repoUrl: "#",
-    liveUrl: "#",
+    title: "Fuimonos: Travel Planner",
+    description: "App web para organizar planificaciones de viajes. Permite crear itinerarios dia a dia, asignar actividades y gestionar gastos. Proyecto full-stack académico, maneja autenticacion, autorizacion y persistencia.",
+    stack: ["Java", "Spring Boot", "React", "Vite", "Tailwind CSS", "PostgreSQL", "Docker"],
+    repoUrl: "https://github.com/MatiEGP/travel-planner",
+    liveUrl: "https://fuimonos-project.vercel.app/",
   },
   {
     title: "Proyecto 2: E-Commerce Dashboard",
     description: "Aplicación full-stack para métricas en tiempo real. Manejo complejo de estado global y optimización de renderizado para gráficos pesados.",
-    stack: ["React", "Python", "Tailwind CSS", "Redis"],
+    stack: ["Java", "Spring Boot", "React", "Vite", "Tailwind CSS", "PostgreSQL", "Docker"],
     repoUrl: "#",
     liveUrl: "#",
   }
@@ -27,10 +27,10 @@ export function Projects() {
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-4">
           Proyectos Destacados
         </h2>
-        <p className="text-lg text-muted-foreground max-w-2xl">
+        {/* <p className="text-lg text-muted-foreground max-w-2xl">
           Una selección de mis mejores desarrollos. Me enfoco en escribir código limpio, 
           arquitecturas escalables y buenas experiencias de usuario.
-        </p>
+        </p> */}
       </div>
 
       <div className="flex flex-col gap-12 md:gap-16">
@@ -76,10 +76,10 @@ export function Projects() {
                 </div>
 
                 <div className="flex gap-4">
-                  <Button variant="default" className="rounded-full font-semibold">
+                  <Button nativeButton={false} variant="default" className="rounded-full font-semibold" render={<a href={project.repoUrl} target="_blank" rel="noopener noreferrer" />}>
                     Ver Código
                   </Button>
-                  <Button variant="outline" className="rounded-full font-semibold">
+                  <Button nativeButton={false} variant="outline" className="rounded-full font-semibold bg-background hover:bg-secondary" render={<a href={project.liveUrl} target="_blank" rel="noopener noreferrer" />}>
                     Ver Demo
                   </Button>
                 </div>
