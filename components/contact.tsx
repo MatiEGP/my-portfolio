@@ -9,7 +9,7 @@ import { useState } from "react";
 
 function CopyEmail() {
   const [copied, setCopied] = useState(false);
-  const email = "matias.palomeque@ejemplo.com"; // TODO: Cambiar por tu email real
+  const email = "matiasgalindo3521@gmail.com"; // TODO: Cambiar por tu email real
 
   const handleCopy = () => {
     navigator.clipboard.writeText(email);
@@ -55,26 +55,26 @@ export function Contact() {
             ¿Construimos algo juntos?
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl mb-10 z-10">
-            Actualmente estoy buscando nuevas oportunidades como Software Engineer Intern / Junior. 
-            Si tenés una propuesta, un proyecto interesante o simplemente querés hablar de código, 
-            mi bandeja de entrada siempre está abierta.
+            Actualmente estoy buscando mi primera oportunidad en el sector IT. 
+            Si tenés una propuesta, un proyecto interesante o simplemente querés hablar de 
+            algun tema sobre tecnología, no dudes en contactarme.
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 z-10">
             <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto items-center justify-center">
-              <Button nativeButton={false} size="lg" className="rounded-full gap-2 font-semibold h-11 px-6" render={<a href="mailto:matias.palomeque@ejemplo.com" />}>
+              <Button nativeButton={false} size="lg" className="rounded-full gap-2 font-semibold h-11 px-6" render={<a href="mailto:matiasgalindo3521@gmail.com" />}>
                 <Mail className="w-5 h-5" />
                 Enviar Email
               </Button>
               <CopyEmail />
             </div>
             
-            <Button nativeButton={false} size="lg" variant="outline" className="rounded-full gap-2 font-semibold bg-background hover:bg-secondary transition-colors" render={<a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" />}>
+            <Button nativeButton={false} size="lg" variant="outline" className="rounded-full gap-2 font-semibold bg-background hover:bg-secondary transition-colors" render={<a href="https://linkedin.com/in/matiepg" target="_blank" rel="noopener noreferrer" />}>
               <FaLinkedin className="w-5 h-5" />
               LinkedIn
             </Button>
 
-            <Button nativeButton={false} size="lg" variant="outline" className="rounded-full gap-2 font-semibold bg-background hover:bg-secondary transition-colors" render={<a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer" />}>
+            <Button nativeButton={false} size="lg" variant="outline" className="rounded-full gap-2 font-semibold bg-background hover:bg-secondary transition-colors" render={<a href="https://github.com/MatiEGP" target="_blank" rel="noopener noreferrer" />}>
               <FaGithub className="w-5 h-5" />
               GitHub
             </Button>

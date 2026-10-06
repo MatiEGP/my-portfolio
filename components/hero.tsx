@@ -93,11 +93,11 @@ export function Hero() {
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
               </span>
               <span className="text-sm font-medium text-foreground">
-                Disponible para nuevas oportunidades (Junior / Intern)
+                Disponible para nuevas oportunidades
               </span>
             </div>
             <div className="text-sm text-muted-foreground font-medium">
-              Enfocado en Node, React & Java
+              {/*Enfocado en Node, React & Java*/}
             </div>
           </div>
         </motion.div>
