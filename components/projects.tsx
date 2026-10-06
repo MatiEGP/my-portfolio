@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const PROJECTS = [
   {
@@ -10,6 +11,7 @@ const PROJECTS = [
     stack: ["Java", "Spring Boot", "React", "Vite", "Tailwind CSS", "PostgreSQL", "Docker"],
     repoUrl: "https://github.com/MatiEGP/travel-planner",
     liveUrl: "https://fuimonos-project.vercel.app/",
+    imageUrl: "", // Ej: "/images/fuimonos.png" (guarda la imagen en la carpeta public/images)
   },
   {
     title: "Proyecto 2: E-Commerce Dashboard",
@@ -17,6 +19,7 @@ const PROJECTS = [
     stack: ["Java", "Spring Boot", "React", "Vite", "Tailwind CSS", "PostgreSQL", "Docker"],
     repoUrl: "#",
     liveUrl: "#",
+    imageUrl: "", // Ej: "/images/proyecto-2.png"
   }
 ];
 
@@ -49,10 +52,24 @@ export function Projects() {
             
             {/* Contenido de la tarjeta */}
             <div className="relative z-10 flex flex-col lg:flex-row gap-8 items-center bg-card p-6 md:p-8 h-full w-full rounded-[calc(1.5rem-1px)] border border-border/50 group-hover:border-transparent transition-colors">
-              {/* Project Image Placeholder */}
-              <div className="w-full lg:w-1/2 aspect-video bg-card border border-border/50 rounded-2xl overflow-hidden relative flex items-center justify-center transition-all duration-300 group-hover:border-primary/50">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
-                <p className="text-muted-foreground font-medium z-10">Mockup Proyecto {index + 1}</p>
+              {/* Project Image */}
+              <div className="w-full lg:w-1/2 aspect-video bg-card border border-border/50 rounded-2xl overflow-hidden relative flex items-center justify-center transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-lg group-hover:shadow-primary/5">
+                {/* Si tenes una imagen, la renderiza optimizada con Next Image */}
+                {project.imageUrl ? (
+                  <Image 
+                    src={project.imageUrl} 
+                    alt={project.title} 
+                    fill 
+                    className="object-cover transition-transform duration-500 group-hover:scale-105" 
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                ) : (
+                  /* Placeholder por si todavia no pusiste la imagen */
+                  <>
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent" />
+                    <p className="text-muted-foreground font-medium z-10">Mockup Proyecto {index + 1}</p>
+                  </>
+                )}
               </div>
 
               {/* Project Info */}
