@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Terminal } from "lucide-react";
 
 export function Hero() {
   return (
@@ -47,7 +48,7 @@ export function Hero() {
           </div>
         </motion.div>
 
-        {/* Avatar / Photo Card (1 col) */}
+        {/* Decorative Terminal Card (1 col) */}
         <motion.div 
           initial={{ opacity: 0, y: 50, scale: 0.85, filter: "blur(10px)" }}
           whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
@@ -62,13 +63,13 @@ export function Hero() {
           <div className="relative z-10 bg-card flex flex-col items-center justify-center h-full w-full p-8 rounded-[calc(1.5rem-1px)] border border-border/50 group-hover:border-transparent transition-colors overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
             
-            {/* Placeholder Avatar */}
-            <div className="w-32 h-32 rounded-full bg-secondary border-4 border-background flex items-center justify-center z-10 shadow-xl group-hover:scale-105 transition-transform duration-300">
-              <span className="text-4xl text-muted-foreground font-bold">MP</span>
+            {/* Icono decorativo */}
+            <div className="w-32 h-32 rounded-3xl bg-secondary/30 border border-primary/20 flex items-center justify-center z-10 group-hover:scale-105 group-hover:bg-secondary/50 group-hover:border-primary/50 transition-all duration-300">
+              <Terminal className="w-16 h-16 text-primary" strokeWidth={1.5} />
             </div>
             
-            <p className="mt-6 text-sm text-muted-foreground text-center z-10 font-medium">
-              Espacio para foto
+            <p className="mt-6 text-sm text-primary/80 text-center z-10 font-mono">
+              ~/dev/backend
             </p>
           </div>
         </motion.div>
