@@ -1,66 +1,36 @@
-# Personal Portfolio / Portafolio Personal 🚀
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Welcome to the repository of my personal portfolio. Here you will find the source code of the website where I showcase my projects, skills, and academic background as a Systems Engineering student and Full-Stack Developer.
+## Getting Started
 
-Bienvenido al repositorio de mi portafolio personal. Aquí encontrarás el código fuente del sitio web donde muestro mis proyectos, habilidades y trayectoria académica como estudiante de Ingeniería en Sistemas y Desarrollador Full-Stack.
+First, run the development server:
 
----
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 🌎 English
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Hello! 👋 I'm Matías Ezequiel Palomeque Galindo
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-I am an advanced **Systems Engineering student** (5th year at UTN FRC) and a passionate **Full-Stack & Backend Developer** based in Córdoba, Argentina. I specialize in building clean, robust, and scalable software solutions, combining modern frontend ecosystems with reliable backend architectures and DevOps practices.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### 💻 About Me
-* 🎓 5th-year Systems Engineering student at Universidad Tecnológica Nacional (UTN FRC).
-* 🛠️ Experienced in Full-Stack development using the **MERN Stack** (React, Node.js, Express) with **SQLite**, alongside strong foundations in **Java (Spring Boot)** and **Python**.
-* 🐳 Passionate about software architecture, DevOps culture (**Docker**, CI/CD), and Quality Assurance (QA).
-* 💡 Driven by analytical problem-solving, continuous learning, and agile methodologies.
+## Learn More
 
-### 🛠️ Key Technologies & Stack
+To learn more about Next.js, take a look at the following resources:
 
-| Area | Technologies |
-| :--- | :--- |
-| **Backend** | Node.js (Express), Python (FastAPI/Django), Java (Spring Boot) |
-| **Frontend** | React, TypeScript, JavaScript, HTML5, CSS3 |
-| **Databases & QA** | SQL, SQLite, PostgreSQL, MySQL, Postman |
-| **DevOps & Tools** | Docker, GitHub Actions, Git/GitHub, Linux, Bizagi (BPMN) |
-| **Hardware / IoT** | Arduino, Digital Logic, Microcontrollers |
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### 📩 Contact & Links
-* **LinkedIn:** [Matias Ezequiel Palomeque Galindo](https://linkedin.com/in/matias-ezequiel-palomeque-galindo-0a775b2a9/)
-* **GitHub:** [MatiEGP](https://github.com/MatiEGP)
-* **Email:** [matiasgalindo3521@gmail.com](mailto:matiasgalindo3521@gmail.com)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-## 🇦🇷 Español
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### ¡Hola! 👋 Soy Matías Ezequiel Palomeque Galindo
-
-Soy un estudiante avanzado de **Ingeniería en Sistemas de Información** (5.° año en la UTN FRC) y desarrollador **Full-Stack & Backend** radicado en Córdoba, Argentina. Me especializo en construir soluciones de software limpias, robustas y escalables, combinando el ecosistema frontend moderno con arquitecturas backend confiables y prácticas DevOps.
-
-### 💻 Sobre Mí
-* 🎓 Estudiante de 5.° año de Ingeniería en Sistemas de Información en la UTN FRC.
-* 🛠️ Experiencia práctica en desarrollo Full-Stack con el **Stack MERN** (React, Node.js, Express) utilizando **SQLite**, además de bases sólidas en **Java (Spring Boot)** y **Python**.
-* 🐳 Apasionado por la arquitectura de software, la cultura DevOps (**Docker**, CI/CD) y el aseguramiento de la calidad (QA).
-* 💡 Orientado a la resolución analítica de problemas, el aprendizaje autónomo y el trabajo bajo metodologías ágiles.
-
-### 🛠️ Tecnologías Principales y Stack
-
-| Área | Tecnologías |
-| :--- | :--- |
-| **Backend** | Node.js (Express), Python (FastAPI/Django), Java (Spring Boot) |
-| **Frontend** | React, TypeScript, JavaScript, HTML5, CSS3 |
-| **Bases de Datos & QA** | SQL, SQLite, PostgreSQL, MySQL, Postman |
-| **DevOps & Herramientas** | Docker, GitHub Actions, Git/GitHub, Linux, Bizagi (BPMN) |
-| **Hardware / IoT** | Arduino, Lógica Digital, Microcontroladores |
-
-### 📩 Contacto y Enlaces
-* **LinkedIn:** [Matias Ezequiel Palomeque Galindo](https://linkedin.com/in/matias-ezequiel-palomeque-galindo-0a775b2a9/)
-* **GitHub:** [MatiEPG](https://github.com/MatiEGP)
-* **Correo Electrónico:** [matiasgalindo3521@gmail.com](mailto:matiasgalindo3521@gmail.com)
-
----
-*Thanks for visiting! / ¡Gracias por tu visita! Feel free to explore my repositories.*
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

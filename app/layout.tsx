@@ -1,0 +1,33 @@
+import type { Metadata } from "next";
+import { Plus_Jakarta_Sans, JetBrains_Mono } from "next/font/google";
+import { InteractiveBackground } from "@/components/interactive-background";
+import "./globals.css";
+
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-sans",
+  subsets: ["latin"],
+});
+
+const jetbrains = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Matias Palomeque Galindo | Software Engineer",
+  description: "Portfolio de Matias Palomeque Galindo, Software Engineer.",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html
+      lang="es"
+      className={`${jakarta.variable} ${jetbrains.variable} h-full antialiased dark`}
+    >
+      <body className="min-h-full flex flex-col">
+        <InteractiveBackground />
+        {children}
+      </body>
+    </html>
+  );
+}
