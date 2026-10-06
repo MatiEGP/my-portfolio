@@ -2,21 +2,20 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Terminal } from "lucide-react";
 
 export function Hero() {
   return (
     <section className="w-full max-w-5xl mx-auto min-h-[100dvh] md:min-h-screen flex flex-col justify-center py-12 px-4 md:snap-start md:snap-always">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         
-        {/* Main Text Card (2 cols) */}
+        {/* Main Text Card */}
         <motion.div 
           initial={{ opacity: 0, y: 50, scale: 0.85, filter: "blur(10px)" }}
           whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
           viewport={{ once: false, amount: 0.2 }}
           whileHover={{ y: -5 }}
           transition={{ type: "spring", bounce: 0.4, duration: 0.8  }}
-          className="relative group md:col-span-2 overflow-hidden rounded-3xl p-[1px] shadow-sm hover:shadow-primary/5"
+          className="relative group md:col-span-3 overflow-hidden rounded-3xl p-[1px] shadow-sm hover:shadow-primary/5"
         >
           {/* Gradiente giratorio de fondo */}
           <span className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -45,32 +44,6 @@ export function Hero() {
                 Ver Proyectos
               </Button>
             </div>
-          </div>
-        </motion.div>
-
-        {/* Decorative Terminal Card (1 col) */}
-        <motion.div 
-          initial={{ opacity: 0, y: 50, scale: 0.85, filter: "blur(10px)" }}
-          whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
-          viewport={{ once: false, amount: 0.2 }}
-          whileHover={{ y: -5 }}
-          transition={{ type: "spring", bounce: 0.4, duration: 0.8, delay: 0.1  }}
-          className="relative group overflow-hidden rounded-3xl p-[1px] shadow-sm hover:shadow-primary/5 min-h-[300px]"
-        >
-          {/* Gradiente giratorio de fondo */}
-          <span className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-          
-          <div className="relative z-10 bg-card flex flex-col items-center justify-center h-full w-full p-8 rounded-[calc(1.5rem-1px)] border border-border/50 group-hover:border-transparent transition-colors overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
-            
-            {/* Icono decorativo */}
-            <div className="w-32 h-32 rounded-3xl bg-secondary/30 border border-primary/20 flex items-center justify-center z-10 group-hover:scale-105 group-hover:bg-secondary/50 group-hover:border-primary/50 transition-all duration-300">
-              <Terminal className="w-16 h-16 text-primary" strokeWidth={1.5} />
-            </div>
-            
-            <p className="mt-6 text-sm text-primary/80 text-center z-10 font-mono">
-              ~/dev/backend
-            </p>
           </div>
         </motion.div>
 
