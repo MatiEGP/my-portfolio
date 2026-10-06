@@ -11,15 +11,15 @@ const PROJECTS = [
     stack: ["Java", "Spring Boot", "React", "Vite", "Tailwind CSS", "PostgreSQL", "Docker"],
     repoUrl: "https://github.com/MatiEGP/travel-planner",
     liveUrl: "https://fuimonos-project.vercel.app/",
-    imageUrl: "", // Ej: "/images/fuimonos.png" (guarda la imagen en la carpeta public/images)
+    imageUrl: "/images/fuimonos.png", // Ej: "/images/fuimonos.png" (guarda la imagen en la carpeta public/images)
   },
   {
-    title: "Proyecto 2: E-Commerce Dashboard",
-    description: "Aplicación full-stack para métricas en tiempo real. Manejo complejo de estado global y optimización de renderizado para gráficos pesados.",
-    stack: ["Java", "Spring Boot", "React", "Vite", "Tailwind CSS", "PostgreSQL", "Docker"],
-    repoUrl: "#",
+    title: "DeporteX: Gestor de Canchas Deportivas",
+    description: "Aplicación full-stack para gestión de canchas deportivas. Manejo completo de ABMC de canchas, turnos y reservas. También incluye un sistema basico de gestion de torneos.",
+    stack: ["Python", "FastAPI", "React", "Vite", "Tailwind CSS", "SQLite"],
+    repoUrl: "https://github.com/MatiEGP/DeporteX",
     liveUrl: "#",
-    imageUrl: "", // Ej: "/images/proyecto-2.png"
+    imageUrl: "/images/deportex.png", // Ej: "/images/proyecto-2.png"
   }
 ];
 
@@ -93,12 +93,16 @@ export function Projects() {
                 </div>
 
                 <div className="flex gap-4">
-                  <Button nativeButton={false} variant="default" className="rounded-full font-semibold" render={<a href={project.repoUrl} target="_blank" rel="noopener noreferrer" />}>
-                    Ver Código
-                  </Button>
-                  <Button nativeButton={false} variant="outline" className="rounded-full font-semibold bg-background hover:bg-secondary" render={<a href={project.liveUrl} target="_blank" rel="noopener noreferrer" />}>
-                    Ver Demo
-                  </Button>
+                  {project.repoUrl !== "#" && (
+                    <Button nativeButton={false} variant="default" className="rounded-full font-semibold" render={<a href={project.repoUrl} target="_blank" rel="noopener noreferrer" />}>
+                      Ver Código
+                    </Button>
+                  )}
+                  {project.liveUrl !== "#" && (
+                    <Button nativeButton={false} variant="outline" className="rounded-full font-semibold bg-background hover:bg-secondary" render={<a href={project.liveUrl} target="_blank" rel="noopener noreferrer" />}>
+                      Ver Demo
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>
