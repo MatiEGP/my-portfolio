@@ -31,9 +31,10 @@ export function Hero() {
               Software Engineer.
             </h2>
             <p className="text-lg text-muted-foreground/80 max-w-xl mb-8 leading-relaxed">
-              Estudiante de Ingeniería en Sistemas. Me especializo en construir 
-              aplicaciones robustas, uniendo la solidez del backend con 
-              experiencias web modernas.
+              Estudiante Avanzado de Ingeniería en Sistemas. Me especializo en Backend,
+              Infraestructura y DevOps. Apasionado por la escalabilidad, la eficiencia y
+              la automatizacion. Busco oportunidades para aprender, aportar y crecer como
+              profesional.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="rounded-full font-semibold" render={<a href="#contact" />} nativeButton={false}>
