@@ -60,7 +60,7 @@ export function TechStack() {
     <section className="w-full max-w-5xl mx-auto min-h-[100dvh] md:min-h-screen flex flex-col justify-center py-12 px-4 md:snap-start md:snap-always">
       <div className="mb-12">
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-4">
-          Stack Tcnico
+          Stack Tecnico
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl">
           Las tecnologas y herramientas con las que trabajo para construir software de principio a fin, desde la infraestructura hasta la interfaz.
